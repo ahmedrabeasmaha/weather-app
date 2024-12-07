@@ -1,0 +1,74 @@
+body {
+  background: #1e202b;
+  color: #bfc1c8;
+}
+
+a,
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover,
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: #bfc1c8;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+  border: 2px solid transparent;
+  --bs-navbar-nav-link-padding-x: 25px;
+  --bs-nav-link-padding-y: 5px;
+  --bs-nav-link-padding-x: 25px;
+  border-radius: 30px;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+.navbar-toggler {
+  background-color: rgb(191, 193, 200);
+}
+
+.custom-button {
+  width: 10%;
+  right: 18px;
+  background: #009ad8;
+  color: white;
+  border: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.custom-input {
+  background: #1e202b;
+  padding: 20px 18px;
+  color: white;
+  border: 0;
+  width: 100%;
+}
+
+.bg-section {
+  min-height: 350px;
+  background: url(../img/banner.png);
+}
+
+.weather {
+  margin-top: -115px;
+}
+.weather-conatiner {
+  background: #323544;
+}
+.weather-conatiner-1 {
+  background: #262936;
+}
+.weather-header {
+  background: rgba(0, 0, 0, 0.1);
+}
+.temp {
+  font-size: 6rem;
+}
+footer {
+  background: #262936;
+}

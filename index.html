@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="#"
+          ><img src="./img/logo.png" alt="logo" class="w-25 me-3" /><span
+            >Weather App</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-lg-auto mb-2 mb-lg-0 d-flex align-items-center text-center py-3 py-lg-0"
+          >
+            <li class="nav-item ms-2 my-3 my-lg-0">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-2 my-3 my-lg-0">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item ms-2 my-3 my-lg-0">
+              <a class="nav-link" href="#live">Live cameras</a>
+            </li>
+            <li class="nav-item ms-2 my-3 my-lg-0">
+              <a class="nav-link" href="#photos">Photos</a>
+            </li>
+            <li class="nav-item ms-2 my-3 my-lg-0">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="bg-section">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col position-relative">
+              <input
+                placeholder="Find your location..."
+                type="text"
+                name="city"
+                id="city"
+                class="custom-input rounded-pill"
+              />
+              <button
+                type="submit"
+                name="submit"
+                id="submit"
+                class="rounded-pill position-absolute custom-button top-50 translate-middle-y"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="weather container mb-5">
+        <div class="row g-0 rounded overflow-hidden" id="weather-card">
+          <div class="weather-conatiner col-12 col-lg-4">
+            <div
+              class="weather-header d-flex justify-content-between align-items-center p-2"
+            >
+              <p class="mb-0">Thursday</p>
+              <p class="mb-0">5 December</p>
+            </div>
+            <div class="weather-body p-4">
+              <p class="mb-0 fs-3">Cairo</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 temp fw-bold text-white">21 &#8451;</p>
+                <img
+                  src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                  alt=""
+                  width="90"
+                />
+              </div>
+              <div class="custom">Partly cloudy</div>
+            </div>
+          </div>
+          <div class="weather-conatiner-1 col-12 col-lg-4">
+            <div
+              class="weather-header d-flex justify-content-center align-items-center p-2"
+            >
+              <p class="mb-0">Thursday</p>
+            </div>
+            <div class="weather-body p-4 text-center">
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt=""
+                width="64"
+              />
+              <p class="mb-0 fs-3 fw-bold text-white">21 &#8451;</p>
+              <p class="">21 &#8451;</p>
+              <p class="">Partly cloudy</p>
+            </div>
+          </div>
+          <div class="weather-conatiner col-12 col-lg-4">
+            <div
+              class="weather-header d-flex justify-content-center align-items-center p-2"
+            >
+              <p class="mb-0">Thursday</p>
+            </div>
+            <div class="weather-body p-4 text-center">
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt=""
+                width="64"
+              />
+              <p class="mb-0 fs-3 fw-bold text-white">21 &#8451;</p>
+              <p class="">21 &#8451;</p>
+              <p class="">Partly cloudy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 100px">
+      <div class="container py-5">
+        <div class="row gy-3">
+          <div class="col-12 col-lg-8 position-relative">
+            <input
+              placeholder="Enter your email to subscribe..."
+              type="email"
+              autocomplete="email"
+              name="email"
+              id="email"
+              class="custom-input rounded-pill"
+            />
+            <button
+              type="submit"
+              name="subscribe"
+              id="subscribe"
+              class="rounded-pill position-absolute custom-button top-50 translate-middle-y"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="col-12 col-lg-4 position-relative">
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 position-relative">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
