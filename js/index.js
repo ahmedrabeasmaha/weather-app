@@ -48,7 +48,8 @@ async function getUserLocation() {
   } else {
     if (permissionStatus == "prompt" || !navigator.geolocation) {
       locationDenied("Permissions not granted yet");
-    } else {
+    }
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           locationGranted({
