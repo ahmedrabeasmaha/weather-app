@@ -2,7 +2,7 @@
 const searchInput = document.querySelector("#city");
 const submitButton = document.querySelector("#submit");
 const showWeather = document.querySelector("#weather-card");
-const baseUrl = "http://api.weatherapi.com/v1";
+const baseUrl = "https://api.weatherapi.com/v1";
 const key = "a4d1441153364590a3a120046240512";
 const daysOfWeek = [
   "Sunday",
