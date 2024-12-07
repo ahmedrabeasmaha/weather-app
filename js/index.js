@@ -46,6 +46,9 @@ async function getUserLocation() {
   if (permissionStatus == "denied") {
     locationDenied("Permissions denied");
   } else {
+    if (permissionStatus == "prompt") {
+      locationDenied("Permissions not granted yet");
+    }
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -59,8 +62,7 @@ async function getUserLocation() {
         }
       );
     } else {
-      getWeather("cairo");
-      console.error("Geolocation is not supported by this browser.");
+      locationDenied("Geolocation is not supported by this browser.");
     }
   }
 }
