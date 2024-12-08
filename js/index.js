@@ -36,7 +36,7 @@ function locationGranted(position) {
 
 function locationDenied(error) {
   console.error(error);
-  getWeather("cairo");
+  getWeatherByCity("cairo");
 }
 
 async function getUserLocation() {
